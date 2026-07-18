@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Parikshit Chakraborty - Professional Resume</title>
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #d69e2e;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #edf2f7;
+            padding: 0;
+        }
+
+        /* Container & Page Breaks */
+        .resume-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .page {
+            padding: 50px;
+            background: #ffffff;
+            position: relative;
+        }
+
+        .page-break {
+            border-top: 5px dashed var(--border-color);
+            background: #edf2f7;
+            height: 20px;
+        }
+
+        /* Cover Page Styling */
+        .cover-page {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 50px;
+            min-height: 950px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: 4px solid var(--accent-color);
+            object-fit: cover;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        .cover-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        .cover-subtitle {
+            font-size: 1.3rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .cover-dept {
+            font-size: 1.1rem;
+            color: #cbd5e0;
+            margin-bottom: 40px;
+        }
+
+        .cover-tagline {
+            font-size: 1.1rem;
+            max-width: 650px;
+            margin: 0 auto 50px auto;
+            font-style: italic;
+            color: #e2e8f0;
+            line-height: 1.8;
+        }
+
+        .cover-practice {
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 20px;
+            border-radius: 4px;
+            max-width: 700px;
+            text-align: left;
+            margin-bottom: 50px;
+        }
+
+        .cover-practice h3 {
+            color: var(--accent-color);
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        .cover-contact {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            max-width: 700px;
+            width: 100%;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 30px;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        .cover-contact a {
+            color: #cbd5e0;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .cover-contact a:hover {
+            color: var(--accent-color);
+        }
+
+        .visa-badge {
+            grid-column: span 2;
+            text-align: center;
+            background: var(--accent-color);
+            color: #0f2027;
+            padding: 6px 15px;
+            font-weight: bold;
+            border-radius: 20px;
+            margin-top: 15px;
+            display: inline-block;
+            justify-self: center;
+            letter-spacing: 1px;
+        }
+
+        /* Main Resume Structure Headers */
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::after {
+            content: '';
+            flex: 1;
+            margin-left: 15px;
+            height: 1px;
+            background: var(--border-color);
+        }
+
+        /* Prime Vision / Mission Layout */
+        .prime-box {
+            background: var(--bg-light);
+            border: 1px solid var(--border-color);
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+        }
+        .prime-box h3 {
+            color: var(--secondary-color);
+            margin-bottom: 8px;
+        }
+        .prime-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .prime-acronym {
+            margin-top: 15px;
+        }
+        .acronym-letter {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        /* Lists and bullets */
+        ul {
+            list-style-type: none;
+        }
+        
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        ul li::before {
+            content: "■";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-size: 0.8rem;
+            top: 2px;
+        }
+
+        /* Grid Frameworks for Skills/Competencies */
+        .competency-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .competency-item {
+            background: var(--bg-light);
+            padding: 10px 15px;
+            border-left: 3px solid var(--secondary-color);
+            font-weight: 500;
+        }
+
+        .skills-section {
+            margin-bottom: 15px;
+        }
+        .skills-category {
+            font-weight: bold;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+
+        /* Accomplishments Cards */
+        .accomplishments-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .accomplishment-card {
+            background: linear-gradient(to right, #ffffff, var(--bg-light));
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.02);
+        }
+        .accomplishment-card strong {
+            color: var(--primary-color);
+        }
+
+        /* Experience Timeline Styles */
+        .exp-item {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        .exp-item:last-child {
+            border-bottom: none;
+        }
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+        .exp-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        .exp-company {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+        .exp-date {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-light);
+            background: var(--bg-light);
+            padding: 2px 10px;
+            border-radius: 4px;
+        }
+
+        /* Projects Section Styling */
+        .project-card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .project-title-bar {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+        .project-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        .project-client {
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+        .project-role {
+            font-style: italic;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+        .project-desc {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        .project-responsibilities {
+            background: var(--bg-light);
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .project-responsibilities h5 {
+            margin-bottom: 6px;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* Hobbies Contextual Blocks */
+        .hobby-block {
+            margin-bottom: 20px;
+            background: var(--bg-light);
+            padding: 15px;
+            border-radius: 6px;
+            border-top: 3px solid var(--accent-color);
+        }
+        .hobby-title {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+        }
+
+        /* Info grids for Basic & Higher Education */
+        .edu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .edu-card {
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: var(--bg-light);
+        }
+        .edu-degree {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        /* Footer Info */
+        .personal-info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            background: var(--bg-light);
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        /* Print Specific Media Rules */
+        @media print {
+            body {
+                background-color: #ffffff;
+            }
+            .resume-container {
+                box-shadow: none;
+                margin: 0;
+                max-width: 100%;
+            }
+            .page {
+                padding: 30px;
+                page-break-after: always;
+            }
+            .page-break {
+                display: none;
+            }
+            .cover-page {
+                min-height: 100%;
+                padding: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+
+    <!-- PAGE 1: COVER PAGE -->
+    <div class="page cover-page">
+        <img src="profile_photo.jpeg" alt="Parikshit" class="profile-img">
+        <h1 class="cover-title">Dr. Parikshit Chakraborty</h1>
+        <div class="cover-subtitle">Principal Instructor [Learning & Development]</div>
+        <div class="cover-dept">Grade: I – Department: HR</div>
+        
+        <p class="cover-tagline">
+            Dynamic and results-driven professional with over 25 years of extensive experience in software development and training, seeking to leverage expertise in educational technology to deliver transformative training solutions and lead L&D activities in the IT sector, preferably within India or abroad.
+        </p>
+
+        <div class="cover-practice">
+            <h3>FOUNDER & CHIEF ADVISOR</h3>
+            <p><strong>PRIMECARD</strong> - An Esoteric, Holistic & IT/ITES B2B Training Services Practice Center</p>
+        </div>
+
+        <div class="cover-contact">
+            <div><strong>Phone:</strong> +91 8617287370 / +91 9874342146</div>
+            <div><strong>Email:</strong> pcankur73@gmail.com</div>
+            <div><strong>Alt Email:</strong> parikshitc@primecardsolutions.net</div>
+            <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/parikshit-chakraborty-295899260/" target="_blank">View Profile</a></div>
+            <div class="visa-badge">US B1/B2 VISA HOLDER VALID TILL 2028</div>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- PAGE 2: STRATEGIC VISION & CORE BACKGROUND -->
+    <div class="page">
+        <h2 class="section-title">Corporate Practice Foundations</h2>
+        <div class="prime-grid">
+            <div class="prime-box">
+                <h3>Vision</h3>
+                <p>To be the definitive global catalyst for digital transformation, empowering enterprises to unlock their full potential through world-class IT/ITES training, cutting-edge software engineering expertise, and future-ready workforce development.</p>
+            </div>
+            <div class="prime-box">
+                <h3>Mission</h3>
+                <p>To bridge the gap between emerging technology and business execution. I deliver rigorous, high-impact corporate training and software solutions that upskill technical teams, optimize operational efficiency, and drive sustainable growth for IT/ITES enterprises worldwide.</p>
+            </div>
+        </div>
+
+        <div class="prime-box acronym-box">
+            <h3>The P.R.I.M.E. Principles</h3>
+            <div class="prime-acronym"><span class="acronym-letter">P</span> – <strong>Precision:</strong> Delivering hyper-tailored curricula mapped directly to specific corporate objectives and technical architectures.</div>
+            <div class="prime-acronym"><span class="acronym-letter">R</span> – <strong>Resilience:</strong> Equipping workforces to adapt swiftly to the volatile, fast-evolving tech landscape.</div>
+            <div class="prime-acronym"><span class="acronym-letter">I</span> – <strong>Innovation:</strong> Integrating next-generation software paradigms (AI, Cloud Architecture, DevOps) into everyday workflows.</div>
+            <div class="prime-acronym"><span class="acronym-letter">M</span> – <strong>Mastery:</strong> Moving beyond theoretical knowledge to ensure deep, practical execution and coding mastery.</div>
+            <div class="prime-acronym"><span class="acronym-letter">E</span> – <strong>Excellence:</strong> Sustaining the highest benchmarks of B2B service delivery, from initial skills assessment to post-training deployment.</div>
+        </div>
+
+        <h3 style="margin-top:20px; color: var(--primary-color);">Strategic Focus Areas</h3>
+        <ul style="margin-top:10px;">
+            <li><strong>Enterprise Upskilling:</strong> Transforming IT/ITES workforces from legacy operators into agile, modern engineers.</li>
+            <li><strong>Customization at Scale:</strong> Building modular software training tracks that align with a client's specific tech stack rather than offering generic, off-the-shelf courses.</li>
+            <li><strong>Measurable ROI:</strong> Ensuring that every training engagement results in faster deployment times, cleaner code bases, and reduced project overhead for corporate partners.</li>
+        </ul>
+
+        <h2 class="section-title">Profile Summary</h2>
+        <ul>
+            <li>Accumulated over 28 years of comprehensive experience in the software development industry, with a strong focus on training and educational methodologies, effectively bridging the gap between technical knowledge and practical application.</li>
+            <li>Over 6 years of experience as a consultant trainer, with expertise in creating tailored training materials, curricula, and e-learning modules to meet industry standards and organizational goals.</li>
+            <li>Currently working as a Principal Consultant – Learning & Development at Zimetrics Technologies, designing and delivering impactful training programs that enhance the skills of participants and align with industry standards.</li>
+            <li>Developed a robust skill set through diverse roles, including software development, system analysis, and technical consulting, leading to a profound understanding of both technical and pedagogical aspects of training.</li>
+            <li>Achieved significant recognition for delivering over 50 internal training sessions and more than 30 fresher training programs, demonstrating a commitment to fostering talent and enhancing workforce capabilities.</li>
+            <li>Exhibited exceptional leadership and mentoring abilities, guiding junior developers and trainees in adopting best practices and innovative solutions, thereby enhancing team performance and productivity.</li>
+            <li>Skilled in mentoring junior developers and guiding teams through best practices, ensuring the development of scalable, secure, and maintainable software solutions.</li>
+            <li>Provides expert consultation on technology adoption, system design, and integration, advising clients on choosing the right tools and frameworks to meet project requirements.</li>
+            <li>Specialized in delivering engaging and interactive training through workshops, practical exercises, role-plays, and simulations, enhancing learning and skill acquisition.</li>
+            <li>Designed training programs that cater to different learning styles, ensuring effective knowledge transfer in both classroom and virtual settings.</li>
+            <li>Committed to staying updated with the latest industry trends and technologies, ensuring that training content is relevant and incorporates cutting-edge tools and practices.</li>
+            <li>Collaborated with organizations such as NIIT Ltd., Mphasis Learning Academy, Cognizant Academy, and UST Global, delivering high-quality training and consulting services.</li>
+            <li>Utilized evaluations, tests, and performance metrics to assess the effectiveness of training programs, ensuring measurable improvements in skills and productivity.</li>
+            <li>Knowledgeable in technologies ranging from software development to machine learning and data science, including DevOps tools like Jira, Confluence, Git Bash, Git Hub, Git Lab, Maven, Selenium, Jenkins, Docker, Power BI, and more.</li>
+        </ul>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- PAGE 3: COMPETENCIES, SKILLS & HIGHLIGHTED ACCOMPLISHMENTS -->
+    <div class="page">
+        <h2 class="section-title">Notable Accomplishments Across the Career</h2>
+        <div class="accomplishments-container">
+            <div class="accomplishment-card"><strong>Best Team Award</strong><br>Provider: Vertex Software Pvt. Ltd., Pune, Maharashtra<br>Year: 2007-08</div>
+            <div class="accomplishment-card"><strong>Most Talented Developer</strong><br>Provider: Advanced Physical Therapy, Ocala, Florida, USA (Client)</div>
+            <div class="accomplishment-card"><strong>100+ Industrial Projects</strong> delivered across various technologies.</div>
+            <div class="accomplishment-card"><strong>50+ Internal Trainings</strong> conducted to enhance team skills.</div>
+            <div class="accomplishment-card"><strong>30+ Fresher Trainings</strong> provided, facilitating smooth industry transitions.</div>
+            <div class="accomplishment-card"><strong>28+ Years</strong> of experience in the IT industry.</div>
+            <div class="accomplishment-card"><strong>22+ Years</strong> of development expertise.</div>
+            <div class="accomplishment-card"><strong>6+ Years</strong> of experience in training and development.</div>
+            <div class="accomplishment-card"><strong>6+ Years</strong> of engineering experience in system design and architecture.</div>
+            <div class="accomplishment-card"><strong>HarvardX Professional Certification</strong> in Python for Data Science & Machine Learning from Harvard University, USA.</div>
+        </div>
+
+        <h2 class="section-title">Core Competencies</h2>
+        <div class="competency-grid">
+            <div class="competency-item">Full Stack Web Development</div>
+            <div class="competency-item">Curriculum & Content Development</div>
+            <div class="competency-item">Technical Training Delivery</div>
+            <div class="competency-item">Mentorship & Coaching</div>
+            <div class="competency-item">Technology Integration & Consultation</div>
+            <div class="competency-item">Project-Based Training</div>
+            <div class="competency-item">Educational Technology</div>
+            <div class="competency-item">Learning Management Systems</div>
+            <div class="competency-item">Instructional Design</div>
+            <div class="competency-item">Knowledge Management</div>
+            <div class="competency-item">Stakeholder Engagement</div>
+        </div>
+
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-section">
+            <div class="skills-category">Front-end Development:</div>
+            <div>HTML5, CSS3, Bootstrap 4, JavaScript, jQuery, Angular, React</div>
+        </div>
+        <div class="skills-section">
+            <div class="skills-category">Back-end Development:</div>
+            <div>Node.js, ASP.NET, C#, WebAPI, Spring Framework, Core Java, Python, Django, Flask, FastAPI, Pyramid</div>
+        </div>
+        <div class="skills-section">
+            <div class="skills-category">Database Management:</div>
+            <div>SQL Server, MongoDB</div>
+        </div>
+        <div class="skills-section">
+            <div class="skills-category">Version Control & Development Tools:</div>
+            <div>Git, Maven, SonarQube</div>
+        </div>
+        <div class="skills-section">
+            <div class="skills-category">Testing & Quality Assurance:</div>
+            <div>JUnit, Mockito, NUnit, MOQ, Selenium, Postman, Swagger</div>
+        </div>
+        <div class="skills-section">
+            <div class="skills-category">DevOps & Automation:</div>
+            <div>Docker, Kubernetes, Jenkins, JFrog, Ansible, Chef, Puppet, SaltStack</div>
+        </div>
+        <div class="skills-section">
+            <div class="skills-category">Cloud Computing & Monitoring:</div>
+            <div>Amazon Web Services (AWS), Grafana, Prometheus, Splunk</div>
+        </div>
+        <div class="skills-section">
+            <div class="skills-category">Data Science & Machine Learning:</div>
+            <div>Pandas, NumPy, Matplotlib, Seaborn, SciPy, TensorFlow, PyTorch, Keras, Scikit-learn</div>
+        </div>
+        <div class="skills-section">
+            <div class="skills-category">API Development & Management:</div>
+            <div>WebAPI, OpenAPI, Swagger</div>
+        </div>
+        <div class="skills-section">
+            <div class="skills-category">Development Practices & Concepts:</div>
+            <div>SOLID Principles, Design Patterns</div>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- PAGE 4: PROFESSIONAL WORK EXPERIENCE -->
+    <div class="page">
+        <h2 class="section-title">Present Work Experience</h2>
+        <div class="exp-item">
+            <div class="exp-header">
+                <div>
+                    <span class="exp-title">Principal Consultant – Learning & Development</span><br>
+                    <span class="exp-company">Zimetrics Technologies</span>
+                </div>
+                <div><span class="exp-date">August 2025 - Present</span></div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Consulting Experience</h2>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <div><span class="exp-title">Knowledge Engineer</span> | <span class="exp-company">Prologic Software Pvt. Ltd., Kolkata, West Bengal</span></div>
+                <div><span class="exp-date">April 2011 - January 2017</span></div>
+            </div>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <div><span class="exp-title">Business Analyst</span> | <span class="exp-company">iArani Incorporate, Gurgaon, Haryana</span></div>
+                <div><span class="exp-date">February 2017 - November 2017</span></div>
+            </div>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <div><span class="exp-title">Sr. Developer</span> | <span class="exp-company">Karmick Solutions Pvt. Ltd., Kolkata, West Bengal</span></div>
+                <div><span class="exp-date">December 2017 - December 2018</span></div>
+            </div>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <div><span class="exp-title">Consultant Developer</span> | <span class="exp-company">Independent Developer, Kolkata, West Bengal</span></div>
+                <div><span class="exp-date">January 2019 - March 2021</span></div>
+            </div>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <div><span class="exp-title">Consultant Trainer</span> | <span class="exp-company">NIIT Ltd., Gurgaon, Haryana</span></div>
+                <div><span class="exp-date">April 2021 – February 2025</span></div>
+            </div>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <div><span class="exp-title">Consultant Trainer</span> | <span class="exp-company">Mazenet Solution Pvt. Ltd., Chennai, Tamil Nadu</span></div>
+                <div><span class="exp-date">July 2022 – January 2023</span></div>
+            </div>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <div><span class="exp-title">Consultant Trainer</span> | <span class="exp-company">Stripe Data Pvt. Ltd., Hyderabad, Telangana</span></div>
+                <div><span class="exp-date">July 2024 – October 2024</span></div>
+            </div>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <div><span class="exp-title">Consultant Trainer</span> | <span class="exp-company">SFJ Business Solution Pvt. Ltd., Bangalore, Karnataka</span></div>
+                <div><span class="exp-date">January 2025 – July 2025</span></div>
+            </div>
+        </div>
+
+        <h3 style="margin-top:20px; color:var(--primary-color);">Core Consultancy & Training Responsibilities:</h3>
+        <ul style="margin-top:10px;">
+            <li><strong>Assessing Training Needs:</strong> Identifying skill gaps and training requirements through thorough assessments and engagement with stakeholders to ensure alignment with organizational goals.</li>
+            <li><strong>Developing Impactful Content:</strong> Creating dynamic training materials, e-learning modules, and presentations tailored to diverse learning needs and industry standards.</li>
+            <li><strong>Designing High-Impact Curricula:</strong> Building and continuously refining comprehensive training programs that drive performance improvement and foster innovation across teams.</li>
+            <li><strong>Facilitating Engaging Training Sessions:</strong> Leading transformative training sessions, blending classroom instruction, virtual learning, and on-the-job coaching, while using interactive methods such as workshops and simulations.</li>
+            <li><strong>Delivering Hands-On Learning:</strong> Ensuring real-world application through practical exercises and hands-on demonstrations that reinforce technical and soft skills.</li>
+            <li><strong>Tailoring Learning Approaches:</strong> Adapting training methods to suit various learning styles and organizational dynamics, maximizing participant engagement and knowledge retention.</li>
+            <li><strong>Measuring Training Effectiveness:</strong> Using evaluation methods to assess training outcomes, applying performance metrics, and gathering feedback to drive continuous improvement.</li>
+            <li><strong>Reporting on Success:</strong> Providing insightful reports on training impact, skill advancement, and productivity gains, ensuring transparency and alignment with business objectives.</li>
+            <li><strong>Staying Updated with Industry Trends:</strong> Continuously updating training content to incorporate the latest technologies, tools, and methodologies, positioning the organization as an industry leader.</li>
+            <li><strong>Troubleshooting and Supporting:</strong> Resolving technical challenges swiftly, ensuring seamless learning experiences and minimizing disruptions.</li>
+            <li><strong>Mentoring and Empowering:</strong> Guiding participants with constructive feedback, fostering growth, and enhancing individual and team performance.</li>
+        </ul>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- PAGE 5: PREVIOUS WORK HISTORY & EDUCATION -->
+    <div class="page">
+        <h2 class="section-title">Previous Work Experience</h2>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <div><span class="exp-title">Sr. Technical Consultant</span><br><span class="exp-company">Alchemy Leadership School</span></div>
+                <div><span class="exp-date">Jan 2009 - Mar 2011</span></div>
+            </div>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <div><span class="exp-title">Sr. Technical Leader</span><br><span class="exp-company">Vertex Software Pvt. Ltd.</span></div>
+                <div><span class="exp-date">Jan 2008 - Dec 2008</span></div>
+            </div>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <div><span class="exp-title">System Analyst</span><br><span class="exp-company">Cybage Software Pvt. Ltd.</span></div>
+                <div><span class="exp-date">Apr 2007 - Dec 2007</span></div>
+            </div>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <div><span class="exp-title">Technical Associate</span><br><span class="exp-company">Tech Mahindra Ltd.</span></div>
+                <div><span class="exp-date">Apr 2006 - Mar 2007</span></div>
+            </div>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <div><span class="exp-title">Sr. Developer</span><br><span class="exp-company">Enterprise Software Solutions Pvt. Ltd.</span></div>
+                <div><span class="exp-date">Apr 2004 - Mar 2006</span></div>
+            </div>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-header">
+                <div><span class="exp-title">Developer</span><br><span class="exp-company">Sysmetric Solutions Pvt. Ltd.</span></div>
+                <div><span class="exp-date">Apr 1999 - Mar 2004</span></div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Basic Education</h2>
+        <div class="edu-grid">
+            <div class="edu-card"><span class="edu-degree">Bachelor of Computer Application</span><br>Jaipur National University, 2023</div>
+            <div class="edu-card"><span class="edu-degree">Master of Business Administration</span><br>Sikkim Manipal University, 2008</div>
+            <div class="edu-card"><span class="edu-degree">Diploma in Management</span><br>Jaipur National University, 2015</div>
+            <div class="edu-card"><span class="edu-degree">Diploma in Engineering</span><br>West Bengal Board, 1996</div>
+            <div class="edu-card" style="grid-column: span 2;"><span class="edu-degree">Diploma in Information Technology</span><br>NIIT, Kolkata & New Delhi, 1999</div>
+        </div>
+
+        <h2 class="section-title">Professional Memberships</h2>
+        <ul>
+            <li><strong>Association for Computing Machinery</strong> | Type: Professional | Membership Number: 2632855 | Since: July, 2024</li>
+            <li><strong>Association for Talent Development</strong> | Type: Professional | Membership Number: 12301599 | Since: September, 2025</li>
+            <li><strong>National Career Service, Ministry of Labour & Employment, Government of India</strong> | Type: Counsellor | Services: Career & Vocational Guidance | Since: December, 2022</li>
+        </ul>
+
+        <h2 class="section-title">Major Clients Managed</h2>
+        <div class="competency-grid" style="grid-template-columns: repeat(4, 1fr); text-align:center;">
+            <div class="edu-card">Cognizant Academy</div>
+            <div class="edu-card">CGI Learning Academy</div>
+            <div class="edu-card">Global Logic Academy</div>
+            <div class="edu-card">UST Global</div>
+            <div class="edu-card">Mphasis Learning Academy</div>
+            <div class="edu-card">NTT Data</div>
+            <div class="edu-card">Maersk Logistics</div>
+            <div class="edu-card">Ambuja Hospitality</div>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- PAGE 6: CERTIFICATIONS -->
+    <div class="page">
+        <h2 class="section-title">VSkills Certifications</h2>
+        <ul>
+            <li><strong>Certified Python Developer</strong> | Provider: VSkills, New Delhi, India | Period: No Expiry</li>
+            <li><strong>Certified SQL Language Professional</strong> | Provider: VSkills, New Delhi, India | Period: No Expiry</li>
+            <li><strong>Certified Instructional Designer</strong> | Provider: VSkills, New Delhi, India | Period: No Expiry</li>
+            <li><strong>Certified L&D Manager</strong> | Provider: VSkills, New Delhi, India | Period: No Expiry</li>
+            <li><strong>Certified Digital Transformation Leader</strong> | Provider: VSkills, New Delhi, India | Period: No Expiry</li>
+        </ul>
+
+        <h2 class="section-title">Other Certifications</h2>
+        <div class="edu-grid" style="grid-template-columns: repeat(1, 1fr); gap: 8px;">
+            <div class="edu-card"><strong>Certified Professional in Python for Data Science & Machine Learning</strong> - Provider: HarvardX | Period: No Expiry</div>
+            <div class="edu-card"><strong>Certified Entry-Level Web Developer</strong> - Provider: JS Institute | Period: No Expiry</div>
+            <div class="edu-card"><strong>Certified Safety & Security Professional</strong> - Provider: Digital Literacy | Period: No Expiry</div>
+            <div class="edu-card"><strong>Certified Python Developer</strong> - Provider: W3Schools | Period: No Expiry</div>
+            <div class="edu-card"><strong>Certified Associate Python Programmer</strong> - Provider: Python Institute | Period: No Expiry</div>
+            <div class="edu-card"><strong>Certified Entry-Level Python Programmer</strong> - Provider: Python Institute | Period: No Expiry</div>
+            <div class="edu-card"><strong>Conversion Optimization</strong> - Provider: Google | Period: 2024 – 2025</div>
+            <div class="edu-card"><strong>Google Analytics</strong> - Provider: Google | Period: 2024 – 2025</div>
+            <div class="edu-card"><strong>Certified Educator Level 2</strong> - Provider: Google | Period: 2024 – 2027</div>
+            <div class="edu-card"><strong>Certified Educator Level 1</strong> - Provider: Google | Period: 2024 – 2027</div>
+            <div class="edu-card"><strong>Certified Training Assessment</strong> - Provider: Google | Period: 2024 – 2027</div>
+            <div class="edu-card"><strong>Certified Technology Specialist</strong> - Provider: Microsoft | No Expiry</div>
+            <div class="edu-card"><strong>Certified Technology Specialist</strong> - Provider: Oracle | No Expiry</div>
+            <div class="edu-card"><strong>Certified Technology Specialist</strong> - Provider: IBM | No Expiry</div>
+            <div class="edu-card"><strong>Certified Scrum Master</strong> - Provider: Learn & Quest | No Expiry</div>
+            <div class="edu-card"><strong>Certified Manual & Selenium Tester</strong> - Provider: Karmick Institute, Kolkata, India | Period: No Expiry</div>
+            <div class="edu-card"><strong>Certified Associate PMP</strong> - Provider: PMSOFT, Pune, India | Period: No Expiry</div>
+            <div class="edu-card"><strong>Certified Resume Writer</strong> - Provider: International Academy for Certification & Training | Period: No Expiry</div>
+            <div class="edu-card"><strong>Certified Career Advisor</strong> - Provider: Career Education Research & Training Council | Period: No Expiry</div>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- PAGE 7: HIGHER ADVANCED STUDIES & INTERESTS -->
+    <div class="page">
+        <h2 class="section-title">Higher Education & Advanced Certifications</h2>
+        <div class="edu-grid">
+            <div class="edu-card"><strong>Certified Numerologist</strong><br>Provider: VSkills, New Delhi, India | Year: 2025</div>
+            <div class="edu-card"><strong>Certified Counselling Practitioner</strong><br>Provider: Achology - The Academy of Modern Applied Psychology, UK | Year: 2025</div>
+            <div class="edu-card"><strong>Diploma in Numerology</strong><br>Provider: Indian Institute of Skill Development Training, Indore, MP, India | Year: 2026</div>
+            <div class="edu-card"><strong>Diploma in Crystal Healing Therapy</strong><br>Provider: Acupressure Sansthan, Jodhpur, Rajasthan, India | Year: 2026</div>
+            <div class="edu-card"><strong>Diploma in Colour Therapy</strong><br>Provider: Acupressure Sansthan, Jodhpur, Rajasthan, India | Year: 2016</div>
+            <div class="edu-card"><strong>Post Graduate Diploma in Numerology</strong><br>Provider: Institute of Vedic Astrology, Indore, MP, India | Year: 2016</div>
+            <div class="edu-card" style="grid-column: span 2;"><strong>Master Diploma in Business & Medical Astrology with Professional Report Writing</strong><br>Provider: Institute of Vedic Astrology, Indore, MP, India | Year: 2026</div>
+            <div class="edu-card" style="grid-column: span 2;"><strong>Doctor of Philosophy in Numerology Science (Gold Medalist)</strong><br>Provider: Shree Maharshi College of Vedic Astrology, Udaipur, Rajasthan, India | Year: 2017</div>
+            <div class="edu-card" style="grid-column: span 2;"><strong>Doctor of Honorary Causa – Cultural Astronomy and Astrology</strong><br>Provider: IIHSR European University, Zürich, Switzerland | Year: 2026</div>
+        </div>
+
+        <h3 style="margin-top: 25px; color: var(--primary-color);">Post Doctoral Research Tracks</h3>
+        <ul style="margin-top: 10px;">
+            <li><strong>Post Doctoral Research on Health Trajectory Number</strong> to determine Overall Health Condition in Medical Numerology from IIHSR European University, Zürich, Switzerland | Year: Pursuing</li>
+            <li><strong>Post Doctoral Research on Health Statistics Number</strong> to determine Current Health Condition in Medical Numerology from IIHSR European University, Zürich, Switzerland | Year: Pursuing</li>
+            <li><strong>Post Doctoral Research on Health Analytics Number</strong> to predict Future Health Condition in Medical Numerology from IIHSR European University, Zürich, Switzerland | Year: Pursuing</li>
+        </ul>
+
+        <h2 class="section-title">Hobbies & Interests</h2>
+        <div class="hobby-block">
+            <div class="hobby-title">Listening Music from Classic Collections – Bengali & Hindi</div>
+            <p>Old is Gold. My hobby is listening to old songs from classic collections which I find to be a deeply enriching and relaxing activity that provides an escape from the everyday.</p>
+            <p>Old songs can evoke a wide range of emotions from joy & excitement to sadness & nostalgia, acting as a powerful outlet for personal feelings.</p>
+            <p>Old songs can improve brain functions, reduce stress, and even boost mood.</p>
+        </div>
+
+        <div class="hobby-block">
+            <div class="hobby-title">Providing Cultural Astronomy, Astrology, Numerology, Human Design, Color Therapy & Crystal Healing Solutions to Family & Friends</div>
+            <p>Cultural Astronomy, Astrology, Numerology, Human Design, Colour Therapy, and Crystal Healing provide a holistic framework for self-discovery, personal growth, and conscious living. These complementary disciplines help you understand your unique patterns, strengths, challenges, and life potential while offering deeper insights into your relationship with the cosmos, energy systems, and natural rhythms.</p>
+            <p>By exploring celestial influences, numerical vibrations, energetic blueprints, colour frequencies, and crystal energies, you can gain greater clarity, make informed decisions, enhance well-being, and align your actions with your authentic purpose. Together, these approaches support self-awareness, balance, transformation, and the creation of a more meaningful and empowered life journey.</p>
+        </div>
+        
+        <h2 class="section-title">Personal Details</h2>
+        <div class="personal-info-grid">
+            <div><strong>Date of Birth:</strong> 31st August 1973</div>
+            <div><strong>Languages Known:</strong> English, Hindi, Bengali</div>
+            <div><strong>Address:</strong> Pune, India</div>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- PAGE 8: INDUSTRIAL PROJECTS (PART 1) -->
+    <div class="page">
+        <h2 class="section-title">Project Details</h2>
+        
+        <div class="project-card">
+            <div class="project-title-bar">
+                <span class="project-name">Project: ePACS Web Service Integration</span>
+                <span class="project-client">Client: RAD365, India</span>
+            </div>
+            <div class="project-role">Role: Project Consultant</div>
+            <p class="project-desc"><strong>Description:</strong> This application was used to integrate WSDL Web Service into ASP.NET Application. In this application soap services are integrated in ASP.NET platform. This included the option of view study list, update study list, login user, image viewer, report viewer through different methods.</p>
+            <div class="project-responsibilities">
+                <h5>Key Accountabilities:</h5>
+                <ul>
+                    <li>Conducted requirement analysis and impact analysis and led team members for development</li>
+                    <li>Rendered technical & R &D related support to team members</li>
+                    <li>Performed programming, report designing and reviewed the code written by the developers</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title-bar">
+                <span class="project-name">Project: Automation Anywhere Bots</span>
+                <span class="project-client">Client: INTERTEK, UK</span>
+            </div>
+            <div class="project-role">Role: Project Consultant</div>
+            <p class="project-desc"><strong>Description:</strong> This application was used to automate back-office operations. In this application users run bots to automate data integration activities. This included the option of timesheet automation, data posting automation, pdf integration through different bots.</p>
+            <div class="project-responsibilities">
+                <h5>Key Accountabilities:</h5>
+                <ul>
+                    <li>Conducted requirement analysis and impact analysis and led team members for development</li>
+                    <li>Rendered technical & R &D related support to team members</li>
+                    <li>Performed programming, report designing and reviewed the code written by the developers</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title-bar">
+                <span class="project-name">Project: Patient Appointment</span>
+                <span class="project-client">Client: Advanced Physical Therapy, USA</span>
+            </div>
+            <div class="project-role">Role: Project Lead</div>
+            <p class="project-desc"><strong>Description:</strong> This application was used to manage appointments for patients. In this application users booked appointment for physio patients. This included the option of patient enquiry, registration, scheduling through different modules.</p>
+            <div class="project-responsibilities">
+                <h5>Key Accountabilities:</h5>
+                <ul>
+                    <li>Conducted requirement analysis and impact analysis and led team members for development</li>
+                    <li>Rendered technical & R &D related support to team members</li>
+                    <li>Performed programming, report designing and reviewed the code written by the developers</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- PAGE 9: INDUSTRIAL PROJECTS (PART 2) -->
+    <div class="page">
+        <div class="project-card">
+            <div class="project-title-bar">
+                <span class="project-name">Project: eTicketing</span>
+                <span class="project-client">Client: West Minster Abbey, UK</span>
+            </div>
+            <div class="project-role">Role: Project Lead</div>
+            <p class="project-desc"><strong>Description:</strong> This application was used to manage tickets for events. In this application users booked electronic tickets for various events. This included the option of donation through different packages.</p>
+            <div class="project-responsibilities">
+                <h5>Key Accountabilities:</h5>
+                <ul>
+                    <li>Conducted requirement analysis and impact analysis and led team members for development</li>
+                    <li>Rendered technical & R &D related support to team members</li>
+                    <li>Performed programming, report designing and reviewed the code written by the developers</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title-bar">
+                <span class="project-name">Project: webBanquet- Events & Catering Management</span>
+                <span class="project-client">Client: Ambuja Hospitality, India</span>
+            </div>
+            <div class="project-role">Role: Project Lead</div>
+            <p class="project-desc"><strong>Description:</strong> This application was used to manage events for banquets. In this application users created new events, scheduled them, plan menu & pricing, schedule services, put notes & so on. This included the option of quick booking through event calendar.</p>
+            <div class="project-responsibilities">
+                <h5>Key Accountabilities:</h5>
+                <ul>
+                    <li>Conducted requirement analysis and impact analysis and led team members for development</li>
+                    <li>Rendered technical & R &D related support to team members</li>
+                    <li>Performed programming, report designing and reviewed the code written by the developers</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title-bar">
+                <span class="project-name">Project: Quality+- Guest Experience Management</span>
+                <span class="project-client">Client: Armani Hotels, Dubai</span>
+            </div>
+            <div class="project-role">Role: Project Lead</div>
+            <p class="project-desc"><strong>Description:</strong> This application was used to create Service Requests & Incidents by the guests to avail different kinds of hospitality services.</p>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title-bar">
+                <span class="project-name">Project: Prime- Operations Web Portal</span>
+                <span class="project-client">Client: Prime Group, India</span>
+            </div>
+            <div class="project-role">Role: Project Lead</div>
+            <p class="project-desc"><strong>Description:</strong> Prime Operations Web Portal was a web application to manage projects by creating models. In this application user created their timesheet also.</p>
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <!-- PAGE 10: INDUSTRIAL PROJECTS (PART 3) -->
+    <div class="page">
+        <div class="project-card">
+            <div class="project-title-bar">
+                <span class="project-name">Project: Rich Media- Advertisement & Publishing Solution</span>
+                <span class="project-client">Client: Microsoft, USA</span>
+            </div>
+            <div class="project-role">Role: Project Lead</div>
+            <p class="project-desc"><strong>Description:</strong> Atlas Rich Media lives within the Atlas Digital Marketing Suite, which included a family of products involving Atlas Media Console, Atlas Search and Atlas Site Optimization. An operating unit of aQuantive, Inc., Atlas provided agencies, marketers & publishers with the technology & services, need to be executed fully integrated online marketing campaigns.</p>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title-bar">
+                <span class="project-name">Project: GTREX_DC- Travel EDI Solution</span>
+                <span class="project-client">Client: GTREX, USA</span>
+            </div>
+            <div class="project-role">Role: Project Lead</div>
+            <p class="project-desc"><strong>Description:</strong> GTREX_DC was an ASP.NET & XML Web Service based EDI Solution which enabled travel agents and providers exchanging messages in XML format.</p>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title-bar">
+                <span class="project-name">Project: Amethyst- Telecom Billing Solution</span>
+                <span class="project-client">Client: British Telecom, UK</span>
+            </div>
+            <div class="project-role">Role: Project Lead</div>
+            <p class="project-desc"><strong>Description:</strong> Amethyst was a consolidated customer-oriented debt analysis application. It used debt information from various Billing platforms (systems) like CSS, CFB, GLOSSI & so on which was then fused together with SCARS data. The analytical response to a customer’s debt profile, at either month or week-end data with range of periods, enhanced reporting structures, enable breakdown and customized downloadable reports. These reports were drilled down to as detailed level from channel group level to invoice level.</p>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title-bar">
+                <span class="project-name">Project: MAP*IT</span>
+                <span class="project-client">Client: Maersk Logistics, Denmark</span>
+            </div>
+            <div class="project-role">Role: Module Lead</div>
+            <p class="project-desc"><strong>Description:</strong> Map*IT was an end-to-end Supply Chain Simulation Methodology which uniquely describes the relationship and visualizes the trade-offs between cost, time and flow in the supply chain.</p>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title-bar">
+                <span class="project-name">Project: AMANDA Mobile</span>
+                <span class="project-client">Client: CSDC Systems Inc., Canada</span>
+            </div>
+            <div class="project-role">Role: Module Lead</div>
+            <p class="project-desc"><strong>Description:</strong> AMANDA Mobile enabled inspectors to have access to schedule, permit & contact and property information using handheld devices out in the field. Securities features ensured that each user accesses their assigned activities and that information collected in the field, including inspection results, new violations or unscheduled inspections were updated into the main database. With AMANDA Mobile, field staff such as Building or Fire Inspectors, Crew Managers, Auditors, Environmental Health or Enforcement Agents managed workload by viewing and updating information for processes assigned to them. AMANDA Mobile worked on laptops, tablets, certain pen-based devices and smart phones.</p>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title-bar">
+                <span class="project-name">Project: M*Prove</span>
+                <span class="project-client">Client: Maersk Logistics, Denmark</span>
+            </div>
+            <div class="project-role">Role: Team Member</div>
+            <p class="project-desc"><strong>Description:</strong> M*Prove was a web-based tool with MVC architecture, designed to maintain the shipping and logistics clients located all over the world. It included different modules like User, Clients, Base, Budget, Estimate, Support and Reports.</p>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title-bar">
+                <span class="project-name">Project: ARMS</span>
+                <span class="project-client">Client: End2End Inc., USA</span>
+            </div>
+            <div class="project-role">Role: Team Member</div>
+            <p class="project-desc"><strong>Description:</strong> A Record Management System to track and maintain all the different crime records for the US Police Department. This was a desktop application designed with the MVC Architecture, run on a local or remote server.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
